@@ -1,0 +1,62 @@
+:root {
+    --grey: #9797978a;
+    --green: linear-gradient(
+        to right top,
+        #9b9b00,
+        #a3a500,
+        #acaf00,
+        #b4ba00,
+        #bcc400
+    );
+    --blue: #00828e;
+    --unitText-color: #000000;
+}
+
+#errorMessage {
+    font-size: 1.5rem;
+}
+
+#converter {
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#converter select {
+    border: none;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    background-image: var(--green);
+    padding: 0 2rem;
+}
+
+#converter input:focus {
+    border: 1px solid var(--blue);
+    box-shadow: none;
+}
+
+#converter input,
+#converter select {
+    font-size: 1rem;
+}
+@media only screen and (min-width: 768px) {
+    #converter {
+        border-radius: 1rem;
+        border: 0.5rem solid var(--blue);
+    }
+    #converter input,
+    #converter select {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #converter input,
+    #converter select {
+        font-size: 2rem;
+    }
+}
